@@ -23,6 +23,8 @@ export const Label = styled.label`
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  gap: 10px;
+  color: ${p => p.theme.colors.secondaryText};
 `;
 
 export const Field = styled(FieldFormic)`
@@ -34,11 +36,19 @@ export const Field = styled(FieldFormic)`
   border-radius: 8px;
 `;
 
-export const addButton = styled.button`
-  margin-top: 10px;
-  background-color: white;
-  border: 1px solid gray;
-  border-radius: 3px;
+export const AddButton = styled.button`
+width: 200px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  background: ${p => p.theme.colors.backgroundBtn};
+  box-shadow: ${p => p.theme.boxShadowBtn};
+  :hover {
+    background: ${p => p.theme.colors.backgroundBtnHover};
+    box-shadow: none;
+    position: relative;
+    top: 5px;
   padding: 1px 10px;
 `;
 

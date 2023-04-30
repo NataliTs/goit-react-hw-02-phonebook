@@ -12,8 +12,16 @@ export const Number = styled.span`
 `;
 
 export const DeleteBtn = styled.button`
-  border: 1px solid gray;
-  border-radius: 3px;
-  justify-content: flex-end;
-  padding: 1px 10px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  background: ${p => p.theme.colors.backgroundBtn};
+  box-shadow: ${p => p.theme.boxShadowBtn};
+  :hover {
+    background: ${p => p.theme.colors.backgroundBtnHover};
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+  }
 `;
